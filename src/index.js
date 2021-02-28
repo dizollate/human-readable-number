@@ -5,7 +5,7 @@ var dg = ['zero','one','two','three','four', 'five','six','seven','eight','nine'
  var tw = ['twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
     number = number.toString();
     number = number.replace(/[\, ]/g,'');
-    if (s != parseFloat(number)) return 'not a number';
+    if (number != parseFloat(number)) return 'not a number';
     var x = number.indexOf('.');
     if (x == -1)
         x = number.length;
